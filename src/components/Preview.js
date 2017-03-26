@@ -1,9 +1,9 @@
 import React from "react";
 
 const Preview = ({ text }) => (
-    <div>
+    <pre>
         { text }
-    </div>
+    </pre>
 );
 
 export default Preview;

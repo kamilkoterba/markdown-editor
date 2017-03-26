@@ -1,11 +1,16 @@
 import React from "react";
 
+import "./Editor.css";
+
 class Editor extends React.Component {
     render() {
         const { onTextChange } = this.props;
 
         return (
-            <input onChange={ (e) => onTextChange(e.target.value) } />
+            <textarea
+                className="editor__textarea"
+                onChange={ (e) => onTextChange(e.target.value) }
+            />
         )
     }
 }
