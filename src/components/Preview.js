@@ -8,10 +8,14 @@ class Preview extends React.Component {
         this.md = new Remarkable();
     }
 
+    parseMarkup(text) {
+        return { __html: this.md.render(text) };
+    }
+
     render() {
-        const text = this.md.render(this.props.text)
+        const { text } = this.props;
         return (
-            <pre>{ text }</pre>
+            <div dangerouslySetInnerHTML={ this.parseMarkup(text) }></div>
         );
     }
 }
