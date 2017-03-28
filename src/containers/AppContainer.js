@@ -6,11 +6,7 @@ const mapStateToProps = (state) => {
     return { text: state }
 };
 
-const mapDispatchToProps = (dispatch) => {
-    return { onTextChange: (newText) => dispatch(createTextChangedAction(newText)) }
-};
-
 export default connect(
     mapStateToProps,
-    mapDispatchToProps
+    { onTextChange: createTextChangedAction }
 )(App);
