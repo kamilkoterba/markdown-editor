@@ -4,11 +4,12 @@ import "./Editor.css";
 
 class Editor extends React.Component {
     render() {
-        const { onTextChange } = this.props;
+        const { text, onTextChange } = this.props;
 
         return (
             <textarea
                 className="editor__textarea"
+                defaultValue={ text }
                 onChange={ (e) => onTextChange(e.target.value) }
             />
         )
