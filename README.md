@@ -17,7 +17,7 @@ git checkout dev-add-redux
 ```
 * **on dev-add-react-redux-connect**: Version with `react-redux` library added that introduces `connect` method to provide props (data from state and actions to dispatch) to App component (no explicit store.subscribe needed)
 ```
-git checkout dev-add-redux
+git checkout dev-add-react-redux-connect
 ```
 ## Run in development mode
 ```node
