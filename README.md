@@ -1,4 +1,4 @@
-## Counter example app
+## Markdown Editor example app
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 **It implements:**
